@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{59915CE3-C58D-4855-B071-ADC9056D25AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{23A7819B-434F-4A3A-973B-46BD24A7CABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E236A052-8A4F-432D-8CE5-11EDDFCC9853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BYOJetApi", "BYOJetApi\BYOJetApi.csproj", "{9A40C3B8-A8C2-4B49-89EC-2BFF3784E110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BYOJetApi.Tests", "BYOJetApi.Tests\BYOJetApi.Tests.csproj", "{5EF46998-6BD3-48A6-B36D-FBFA1E70EA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BYOJetServiceLayer", "BYOJetServiceLayer\BYOJetServiceLayer.csproj", "{50B4E5D1-B40A-440C-A45D-20BCD2CF5C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWT", "OWT\OWT.csproj", "{B3919E27-8A32-4EE6-BD6A-77F2683889FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CE22E267-DFCF-4130-9CB7-8C15169ABBC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BYOJetServiceLayerTests", "BYOJetServiceLayerTests\BYOJetServiceLayerTests.csproj", "{A3CEC724-3796-4DBE-BD23-843F496A9263}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F21ED406-1BD5-45A7-910A-32C942A77F33}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A40C3B8-A8C2-4B49-89EC-2BFF3784E110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A40C3B8-A8C2-4B49-89EC-2BFF3784E110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A40C3B8-A8C2-4B49-89EC-2BFF3784E110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A40C3B8-A8C2-4B49-89EC-2BFF3784E110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF46998-6BD3-48A6-B36D-FBFA1E70EA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF46998-6BD3-48A6-B36D-FBFA1E70EA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF46998-6BD3-48A6-B36D-FBFA1E70EA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF46998-6BD3-48A6-B36D-FBFA1E70EA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B4E5D1-B40A-440C-A45D-20BCD2CF5C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B4E5D1-B40A-440C-A45D-20BCD2CF5C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B4E5D1-B40A-440C-A45D-20BCD2CF5C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B4E5D1-B40A-440C-A45D-20BCD2CF5C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3919E27-8A32-4EE6-BD6A-77F2683889FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3919E27-8A32-4EE6-BD6A-77F2683889FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3919E27-8A32-4EE6-BD6A-77F2683889FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3919E27-8A32-4EE6-BD6A-77F2683889FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CEC724-3796-4DBE-BD23-843F496A9263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CEC724-3796-4DBE-BD23-843F496A9263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CEC724-3796-4DBE-BD23-843F496A9263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CEC724-3796-4DBE-BD23-843F496A9263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A40C3B8-A8C2-4B49-89EC-2BFF3784E110} = {23A7819B-434F-4A3A-973B-46BD24A7CABE}
+		{5EF46998-6BD3-48A6-B36D-FBFA1E70EA95} = {CE22E267-DFCF-4130-9CB7-8C15169ABBC8}
+		{50B4E5D1-B40A-440C-A45D-20BCD2CF5C79} = {E236A052-8A4F-432D-8CE5-11EDDFCC9853}
+		{B3919E27-8A32-4EE6-BD6A-77F2683889FB} = {59915CE3-C58D-4855-B071-ADC9056D25AA}
+		{A3CEC724-3796-4DBE-BD23-843F496A9263} = {CE22E267-DFCF-4130-9CB7-8C15169ABBC8}
+	EndGlobalSection
+EndGlobal

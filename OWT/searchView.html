@@ -1,0 +1,50 @@
+﻿<!--<script type="text/javascript">
+    var today = moment().format('YYYY-MM-DD');
+    $('#searchDate').val(today);
+</script>-->
+
+
+<div id="search" class="search" ng-show="vm.showSearch">
+
+    <form name="searchForm" class="form">
+        <input type="text" ng-model="vm.from" required ng-trim="true" placeholder="From">
+        <input type="text" ng-model="vm.to" required ng-trim="true" placeholder="To">
+        <input type="date" ng-model="vm.date" value="{{vm.currentDate}}">
+        <button type="submit" ng-click="vm.search(searchForm.$valid)">Search</button>
+        <label style="margin-top:25px;color:red;">{{vm.searchError}}</label>
+        <div role="alert">
+            <span class="error" ng-show="searchForm.input.$error.required">
+                Required!
+            </span>
+        </div>
+    </form>
+
+</div>
+<div id="loading"><!-- Should display a loading image whilst search is being performed --></div>
+<div id="results" class="results" ng-show="vm.showResults">
+
+    <h2 class="searchCriteria">{{vm.from}} to {{vm.to}} departing {{vm.date | date:'dd MMM yyyy'}}</h2>
+    <table class="results-table">
+        <thead>
+            <tr>
+                <td class="results-table-header">Carrier</td>
+                <td class="results-table-header">Flight</td>
+                <td class="results-table-header">Depart</td>
+                <td class="results-table-header">Arrive</td>
+                <td class="results-table-header">Fare</td>
+                <td class="results-table-header-select"><!-- Col for selecting the flight option of your choice --></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="flightResult in vm.flightResults">
+                <td class="results-table-col">{{flightResult.Carrier}}</td>
+                <td class="results-table-col">{{flightResult.Flight}}</td>
+                <td class="results-table-col">{{flightResult.Depart}}</td>
+                <td class="results-table-col">{{flightResult.Arrive}}</td>
+                <td class="results-table-col">${{flightResult.Fare}}</td>
+                <td class="results-table-col-select"><input type="radio" name="flightSelection" value="Select" id="flightSelection-{{flightResult.Flight}}" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>

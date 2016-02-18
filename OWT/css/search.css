@@ -1,0 +1,50 @@
+﻿.search{
+    border: 2px solid black;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.results{
+    width: 50%;
+    margin: auto;
+    border: solid 2px black;
+}
+
+.results-border {
+    width: 100%;
+    margin:10px 0px;
+}
+
+.results-table {
+    width:100%;
+}
+
+.results-table thead {
+    background-color:lightgray;
+    height:30px;
+}
+
+.results-table tbody tr {
+    height:25px;
+}
+
+.results-table-header {
+    width: 18%;
+    text-align: center;
+}
+
+.results-table-header-select {
+    width: 10%;
+    text-align: center;
+}
+
+.results-table-col {
+    width: 18%;
+    text-align: center;
+}
+
+.results-table-col-select {
+    width: 10%;
+    text-align: center;
+}

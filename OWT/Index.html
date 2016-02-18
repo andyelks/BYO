@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html ng-app="OneWayTravel">
+<head>
+    <title>One Way Travel</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/jquery-2.2.0.min.js"></script>
+    <script src="Scripts/moment.min.js"></script>
+
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/search.css" rel="stylesheet" />
+
+
+    <script src="Scripts/app.js"></script>
+    <script src="Services/flightSearch.js"></script>
+    <script src="Controllers/bookingController.js"></script>
+    <script src="Controllers/searchController.js"></script>
+    <script src="Controllers/indexController.js"></script>
+</head>
+<body ng-controller="indexController as ivm">
+    <h1>One Way Travel</h1>
+    <h2>One way with no way back &trade;</h2>
+
+    <div ui-view></div>
+
+</body>
+</html>
